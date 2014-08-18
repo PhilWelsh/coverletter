@@ -186,7 +186,7 @@ a{height:100%;width:100%;position:absolute;top:0;}
           h1,h2,h3,h4,p{margin:0; font-size:2rem;}
           a{color: inherit;
 text-decoration: none;}
-          p{text-align:left; font-size:2rem;margin-top: 40px;padding-left: 50px;}
+          p{font-size:2rem;margin-top: 40px;padding-left: 50px;}
          h1{font-size:8rem; font-family:silentreaction;margin:0;padding-left: 50px;}
          h2, img{display:inline-block;} img{vertical-align: top;}
          h4{margin-top: 80px;}
@@ -491,7 +491,7 @@ span{
     .one{
         p,h2,h3,h4{font-size:1rem;}
         h1{font-size: 6rem;padding-left: 50px;}
-        p{padding-left:100px;}
+        p{padding-left:100px;text-align: left;}
     }
     .two{}
     .three{
