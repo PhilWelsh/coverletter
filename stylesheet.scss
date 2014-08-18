@@ -436,7 +436,7 @@ background-color: rgb(66, 66, 66);position:relative;
      .four{background: linear-gradient(to bottom, #373737 0%, #C4C8E6 100%);
          .wrap{width:800px; margin:auto; text-align:center;padding: 100px;}
          h1{font-size:8rem; font-family:silentreaction;margin:0;}
-         
+         &.active{
          p{text-align:left;
   color: black; 
   font-family: "Courier";
@@ -463,6 +463,8 @@ span{
   @include animation(blink 1s infinite);
 }
 }
+
+     }
 @-webkit-keyframes type{ from { width: 0; } } 
 
 @-webkit-keyframes type2{
