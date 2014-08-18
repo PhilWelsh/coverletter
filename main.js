@@ -15,20 +15,15 @@
         'loopBottom': true,
         'loopTop': false,
         'loopHorizontal': true,
-        'autoScrolling': false,
+        'autoScrolling': true,
         'scrollOverflow': true,
 
-        //afterRender: function () {//autoslides slides
-        //    setInterval(function () {
-        //        $.fn.fullpage.moveSlideRight();
-        //    }, 2000);
-        //}
     });
 
     $('.slip').on('click', function (e) {
-        var $this = $(e.currentTarget)
+        var $this = $(e.currentTarget);
         if($this.hasClass('move')){
-            $this.parent().children().removeClass('move')
+            $this.parent().children().removeClass('move');
             setTimeout(function () {
                 $this.parent().children().addClass('move');
             }, 1000)        
