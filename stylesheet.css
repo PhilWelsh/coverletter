@@ -4,14 +4,6 @@
 .fp-scrollable {
   overflow: hidden !important; }
 
-/*  //FONTS
-.font-yanone{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-@font-face {
-  font-family: chomp;
-  src:url(../font/28dayslater.ttf)  format('truetype');}*/
 @font-face {
   font-family: silentreaction;
   src: url(fonts/silentreaction.ttf) format('truetype'); }
@@ -21,12 +13,12 @@
   src: url(fonts/patuaoneregular.ttf) format('truetype'); }
 
 @font-face {
-  font-family: seshat;
-  src: url(../font/Seshat.otf) format('opentype'); }
-
-@font-face {
   font-family: quandoregular;
   src: url(fonts/quandoregular.ttf) format('truetype'); }
+
+@font-face {
+  font-family: seshat;
+  src: url(../font/Seshat.otf) format('opentype'); }
 
 .displaynone {
   display: none; }
@@ -182,7 +174,7 @@ body {
   .one p {
     font-size: 2rem;
     margin-top: 40px;
-    padding-left: 50px; }
+    padding-right: 450px; }
   .one h1 {
     font-size: 8rem;
     font-family: silentreaction;
@@ -699,6 +691,13 @@ body {
   display: block; }
   .fp-tableCell .fp-scrollable {
     height: inherit; }
+  .fp-tableCell h2.wide {
+    display: block; }
+  .fp-tableCell h2.tall {
+    display: none;
+    margin: 0 !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important; }
   .fp-tableCell .header {
     position: relative;
     text-align: center;
@@ -854,9 +853,10 @@ body {
       -webkit-transform: translateX(-10%);
       transform: translateX(-10%); }
     .fp-tableCell .sliders h2 {
-      margin: 120px 0;
+      margin: 60px 0;
       padding: 40px;
       -webkit-text-stroke: 1px black;
+      font-size: 20px;
       color: whitesmoke;
       border: 3px solid #9b9999;
       background-color: #424242;
@@ -869,7 +869,7 @@ body {
 .four {
   background: linear-gradient(to bottom, #373737 0%, #C4C8E6 100%); }
   .four .wrap {
-    width: 100%;
+    width: 700px;
     margin: auto;
     text-align: center; }
   .four h1 {
@@ -933,25 +933,60 @@ body {
   to {
     opacity: 0; } }
 
-@media only screen and (max-width: 850px) {
-  .one {
-    text-align: left; } }
+.five {
+  margin-left: 50px;
+  background-color: #e7e1e1; }
 
-@media only screen and (max-width: 650px) {
+.cl {
+  background-color: #fdfdfd;
+  border: 1px solid black;
+  width: 750px;
+  margin: auto;
+  max-height: 90%;
+  max-width: 80%;
+  overflow: scroll; }
+  .cl > div {
+    padding: 30px; }
+  .cl > div:nth-child(2n) {
+    background-color: #e0e0e0; }
+  .cl .company, .cl .myself {
+    background-color: #f3f3f3; }
+  .cl p {
+    margin: 0;
+    font-size: 19px; }
+
+@media only screen and (max-width: 900px) {
+  .one {
+    text-align: left; }
+    .one p {
+      padding-left: 100px;
+      text-align: left;
+      padding-left: 100px;
+      padding-right: 0; } }
+
+@media only screen and (max-width: 700px) {
   .one p, .one h2, .one h3, .one h4 {
     font-size: 1rem; }
   .one h1 {
     font-size: 6rem;
     padding-left: 50px; }
-  .one p {
-    padding-left: 100px;
-    text-align: left; }
   .three h3, .three h4 {
     font-size: 0.8em; }
+  .three h2.wide {
+    display: none !important; }
+  .three h2.tall {
+    display: block !important; }
+  .four.active .wrap {
+    width: 100%; }
   .four.active h1 {
     padding-bottom: 50px;
     line-height: 70px; }
   .four.active p {
     font-size: 13px; } }
+
+@media only screen and (max-width: 500px) {
+  .two p {
+    width: 50%;
+    font-size: 20px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
