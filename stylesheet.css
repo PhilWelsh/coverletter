@@ -182,11 +182,13 @@ body {
   .one p {
     text-align: left;
     font-size: 2rem;
-    margin-top: 40px; }
+    margin-top: 40px;
+    padding-left: 50px; }
   .one h1 {
     font-size: 8rem;
     font-family: silentreaction;
-    margin: 0; }
+    margin: 0;
+    padding-left: 50px; }
   .one h2, .one img {
     display: inline-block; }
   .one img {
@@ -932,15 +934,24 @@ body {
   to {
     opacity: 0; } }
 
+@media only screen and (max-width: 850px) {
+  .one {
+    text-align: left; } }
+
 @media only screen and (max-width: 650px) {
-  .one padding, .one h2 {
+  .one p, .one h2, .one h3, .one h4 {
     font-size: 1rem; }
+  .one h1 {
+    font-size: 6rem;
+    padding-left: 50px; }
+  .one p {
+    padding-left: 100px; }
   .three h3, .three h4 {
     font-size: 0.8em; }
-  .four h1 {
+  .four.active h1 {
     padding-bottom: 50px;
     line-height: 70px; }
-  .four p {
+  .four.active p {
     font-size: 13px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
