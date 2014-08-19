@@ -19,18 +19,6 @@
         'scrollOverflow': true,
 
     });
-
-    $('.slip').on('click', function (e) {
-        var $this = $(e.currentTarget);
-        if($this.hasClass('move')){
-            $this.parent().children().removeClass('move');
-            setTimeout(function () {
-                $this.parent().children().addClass('move');
-            }, 1000)        
-        } else {
-            $this.parent().children().addClass('move');
-        }
-
         $('.pers').on('click', function () {
             setTimeout(function () {
                 $('.abilitytech').addClass('displaynone')
@@ -43,6 +31,18 @@
                 $('.abilitytech').removeClass('displaynone');
             }, 800);
         });
+    $('.slip').on('click', function (e) {
+        var $this = $(e.currentTarget);
+        if($this.hasClass('move')){
+            $this.parent().children().removeClass('move');
+            setTimeout(function () {
+                $this.parent().children().addClass('move');
+            }, 1000)        
+        } else {
+            $this.parent().children().addClass('move');
+        }
+
+
     })
 
     //if ($('.four').hasClass('active')) {
