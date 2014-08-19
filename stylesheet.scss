@@ -148,12 +148,13 @@ body{margin:0;padding:0;}
 
 .icons{position: fixed;left: 0;top: 10%;z-index:9;
        >div{border-bottom:1px solid transparent; height:50px;position:relative;}
-img{width: 50px; height: 50px;background-color: #212121;}
+img{width: 50px; height: 50px;background-color: #3D3D3D;}
 a{height:100%;width:100%;position:absolute;top:0;}
 
 #website:hover img{background-color: rgb(248, 159, 4);}
-#linkedin:hover img{background-color: #333344;}
-#email:hover img{background-color: #eaeaea;}
+#linkedin:hover img{background-color: #007bb6;}
+#email:hover img{background-color: #c3c3c3;}
+#git:hover img{background-color: black;}
 }
 
 
@@ -177,11 +178,12 @@ a{height:100%;width:100%;position:absolute;top:0;}
           h1,h2,h3,h4,p{margin:0; font-size:2rem;}
           a{color: inherit;
 text-decoration: none;}
-          p{font-size:2rem;margin-top: 40px;padding-right: 450px;}
+          p{font-size:2rem;margin-top: 110px;padding-right: 450px;}
          h1{font-size:8rem; font-family:silentreaction;margin:0;padding-left: 50px;}
          h2, img{display:inline-block;} img{vertical-align: top;}
          h4{margin-top: 80px;}
     .logo{position:relative;display: inline;
+          margin-left:20px;
           img{position:absolute;z-index:4;}
     }     
 }
@@ -269,7 +271,7 @@ img:nth-child(4){top:-10px;left:1000px;@include animation(sliderightIn ease-in 1
 
 .one h3 span,h3 a{
     position:relative;
-    right:1000px; /* make things invisible upon start */
+    right:-2000px; /* make things invisible upon start */
     @include animation(sliderightIn ease-in 1);
     @include animation-fill-mode( forwards);
     @include animation-duration( .8s);
@@ -277,7 +279,9 @@ img:nth-child(4){top:-10px;left:1000px;@include animation(sliderightIn ease-in 1
 .one h3{
     span:nth-child(1){@include animation-delay(5s);}
     span:nth-child(2){@include animation-delay(5.4s);}
-    a{@include animation-delay(6.2s);}
+    span:nth-child(3){@include animation-delay(5.8s);}
+    span:nth-child(4){@include animation-delay(6.2s);}
+    a{@include animation-delay(7s);}
 }
 @-webkit-keyframes h4 { from { opacity:0;top:200px } to { opacity:1; top:0;} }
 @keyframes h4 { from { opacity:0;top:300px } to { opacity:1; top:100px;} }
@@ -286,7 +290,7 @@ img:nth-child(4){top:-10px;left:1000px;@include animation(sliderightIn ease-in 1
     opacity: 0;
     @include animation(h4 ease-in 1);
     position: relative;
-    @include animation-delay( 7.5s);
+    @include animation-delay( 8s);
     @include animation-fill-mode( forwards);
     @include animation-duration(  2s);
 
@@ -299,11 +303,13 @@ img:nth-child(4){top:-10px;left:1000px;@include animation(sliderightIn ease-in 1
      //////////////////////////////////////////TWO//////////////////////////////////////////
      .two{background-color: #68635B;; font-family:quandoregular;
          .header{position:relative; text-align:center;
+                 border-bottom: 3px solid white;
                  background-color: #BDB6AA; color: rgb(243, 236, 198);
                  font-size: 2rem; padding: 20px;
 h2{margin: auto;width: 300px;border: 1px solid white;padding: 10px;}
          }
          p{color: white; background-color: rgb(160, 155, 135);
+           border: 4px solid white;
 font-size: 30px; width: 70%; margin: -150px auto 0;
 border-radius: 15px; padding: 20px;text-align:center;
          }
@@ -427,7 +433,9 @@ background-color: rgb(66, 66, 66);position:relative;
 
 //////////////////////////////////////////FOUR//////////////////////////////////////////
      .four{background: linear-gradient(to bottom, #373737 0%, #C4C8E6 100%);
-         .wrap{width: 700px; margin:auto; text-align:center;}
+         .wrap{width: 700px; margin:auto; text-align:center;
+               img{float:right;height:200px;width:300px;}
+         }
          h1{font-size:8rem; font-family:silentreaction;margin:auto;}
          &.active{
          p{text-align:left;
@@ -475,7 +483,7 @@ span{
 @-webkit-keyframes blink{to{opacity: .0;}}
 
      .five{margin-left:50px;background-color: rgb(231, 225, 225);
-
+           h5{margin:0;}
      }
       .cl{background-color: rgb(253, 253, 253);
           border: 1px solid black;
@@ -492,7 +500,8 @@ span{
 
 @media only screen and (max-width: 900px){
     .one{text-align:left;
-    p{padding-left:100px;text-align: left;padding-left:100px;padding-right:0;}
+    p{padding-left:100px;text-align: left;padding-right:0;
+    }
     }
 }
 
