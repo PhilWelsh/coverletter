@@ -532,10 +532,14 @@ span{
         h1{padding-bottom: 50px;line-height: 70px;}
         p{font-size: 13px;}
     }
-
+    .five{
+        .cl{margin-left:0;width:80%;}
+    }
 }
 @media only screen and (max-width: 500px){
 .two p{
     width:50%;font-size:20px;
 }
+
+.five .cl{margin:0;}
     }
