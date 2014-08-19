@@ -159,43 +159,6 @@ body {
   border-bottom: 45px solid #f3ecc6;
   border-left: 45px solid transparent; }
 
-.one {
-  text-align: center;
-  background-color: #FCFCFC;
-  color: #757597;
-  font-family: patuaoneregular; }
-  .one .wrap {
-    margin: 0 auto;
-    width: 100%; }
-  .one h1, .one h2, .one h3, .one h4, .one p {
-    margin: 0;
-    font-size: 2rem; }
-  .one a {
-    color: inherit;
-    text-decoration: none; }
-  .one p {
-    font-size: 2rem;
-    margin-top: 110px;
-    padding-right: 450px; }
-  .one h1 {
-    font-size: 8rem;
-    font-family: silentreaction;
-    margin: 0;
-    padding-left: 50px; }
-  .one h2, .one img {
-    display: inline-block; }
-  .one img {
-    vertical-align: top; }
-  .one h4 {
-    margin-top: 80px; }
-  .one .logo {
-    position: relative;
-    display: inline;
-    margin-left: 20px; }
-    .one .logo img {
-      position: absolute;
-      z-index: 4; }
-
 @-webkit-keyframes slideIn {
   from {
     -moz-transform: translateX(-100%);
@@ -241,27 +204,6 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
-.pone {
-  -moz-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  /* make things offside upon start */
-  -moz-animation: slideIn ease-in 1;
-  -o-animation: slideIn ease-in 1;
-  -webkit-animation: slideIn ease-in 1;
-  animation: slideIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s; }
-
-.hider {
-  background-color: #FCFCFC;
-  z-index: 2;
-  position: relative; }
-
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
@@ -276,23 +218,6 @@ body {
   to {
     opacity: 1; } }
 
-.hone {
-  opacity: 0;
-  /* make things invisible upon start */
-  -moz-animation: fadeIn ease-in 1;
-  -o-animation: fadeIn ease-in 1;
-  -webkit-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s; }
-
 @-webkit-keyframes dropIn {
   from {
     top: -50px; }
@@ -306,164 +231,6 @@ body {
 
   to {
     top: 0; } }
-
-.one h2 span {
-  position: relative;
-  top: -50px;
-  /* make things invisible upon start */
-  -moz-animation: dropIn ease-in 1;
-  -o-animation: dropIn ease-in 1;
-  -webkit-animation: dropIn ease-in 1;
-  animation: dropIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.1s;
-  animation-duration: 0.1s; }
-
-.one h2 span:nth-child(1) {
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  -ms-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s; }
-.one h2 span:nth-child(2) {
-  -moz-animation-delay: 2.05s;
-  -o-animation-delay: 2.05s;
-  -ms-animation-delay: 2.05s;
-  -webkit-animation-delay: 2.05s;
-  animation-delay: 2.05s; }
-.one h2 span:nth-child(3) {
-  -moz-animation-delay: 2.1s;
-  -o-animation-delay: 2.1s;
-  -ms-animation-delay: 2.1s;
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s; }
-.one h2 span:nth-child(4) {
-  -moz-animation-delay: 2.15s;
-  -o-animation-delay: 2.15s;
-  -ms-animation-delay: 2.15s;
-  -webkit-animation-delay: 2.15s;
-  animation-delay: 2.15s; }
-.one h2 span:nth-child(5) {
-  -moz-animation-delay: 2.2s;
-  -o-animation-delay: 2.2s;
-  -ms-animation-delay: 2.2s;
-  -webkit-animation-delay: 2.2s;
-  animation-delay: 2.2s; }
-.one h2 span:nth-child(6) {
-  -moz-animation-delay: 2.25s;
-  -o-animation-delay: 2.25s;
-  -ms-animation-delay: 2.25s;
-  -webkit-animation-delay: 2.25s;
-  animation-delay: 2.25s; }
-.one h2 span:nth-child(7) {
-  -moz-animation-delay: 2.3s;
-  -o-animation-delay: 2.3s;
-  -ms-animation-delay: 2.3s;
-  -webkit-animation-delay: 2.3s;
-  animation-delay: 2.3s; }
-.one h2 span:nth-child(8) {
-  -moz-animation-delay: 2.35s;
-  -o-animation-delay: 2.35s;
-  -ms-animation-delay: 2.35s;
-  -webkit-animation-delay: 2.35s;
-  animation-delay: 2.35s; }
-.one h2 span:nth-child(9) {
-  -moz-animation-delay: 2.4s;
-  -o-animation-delay: 2.4s;
-  -ms-animation-delay: 2.4s;
-  -webkit-animation-delay: 2.4s;
-  animation-delay: 2.4s; }
-.one h2 span:nth-child(10) {
-  -moz-animation-delay: 2.45s;
-  -o-animation-delay: 2.45s;
-  -ms-animation-delay: 2.45s;
-  -webkit-animation-delay: 2.45s;
-  animation-delay: 2.45s; }
-.one h2 span:nth-child(11) {
-  -moz-animation-delay: 2.5s;
-  -o-animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s; }
-.one h2 span:nth-child(12) {
-  -moz-animation-delay: 2.55s;
-  -o-animation-delay: 2.55s;
-  -ms-animation-delay: 2.55s;
-  -webkit-animation-delay: 2.55s;
-  animation-delay: 2.55s; }
-.one h2 span:nth-child(13) {
-  -moz-animation-delay: 2.6s;
-  -o-animation-delay: 2.6s;
-  -ms-animation-delay: 2.6s;
-  -webkit-animation-delay: 2.6s;
-  animation-delay: 2.6s; }
-.one h2 span:nth-child(14) {
-  -moz-animation-delay: 2.65s;
-  -o-animation-delay: 2.65s;
-  -ms-animation-delay: 2.65s;
-  -webkit-animation-delay: 2.65s;
-  animation-delay: 2.65s; }
-.one h2 span:nth-child(15) {
-  -moz-animation-delay: 2.7s;
-  -o-animation-delay: 2.7s;
-  -ms-animation-delay: 2.7s;
-  -webkit-animation-delay: 2.7s;
-  animation-delay: 2.7s; }
-.one h2 span:nth-child(16) {
-  -moz-animation-delay: 2.75s;
-  -o-animation-delay: 2.75s;
-  -ms-animation-delay: 2.75s;
-  -webkit-animation-delay: 2.75s;
-  animation-delay: 2.75s; }
-.one h2 span:nth-child(17) {
-  -moz-animation-delay: 2.8s;
-  -o-animation-delay: 2.8s;
-  -ms-animation-delay: 2.8s;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s; }
-.one h2 span:nth-child(18) {
-  -moz-animation-delay: 2.85s;
-  -o-animation-delay: 2.85s;
-  -ms-animation-delay: 2.85s;
-  -webkit-animation-delay: 2.85s;
-  animation-delay: 2.85s; }
-.one h2 span:nth-child(19) {
-  -moz-animation-delay: 2.9s;
-  -o-animation-delay: 2.9s;
-  -ms-animation-delay: 2.9s;
-  -webkit-animation-delay: 2.9s;
-  animation-delay: 2.9s; }
-.one h2 span:nth-child(20) {
-  -moz-animation-delay: 2.95s;
-  -o-animation-delay: 2.95s;
-  -ms-animation-delay: 2.95s;
-  -webkit-animation-delay: 2.95s;
-  animation-delay: 2.95s; }
-.one h2 span:nth-child(21) {
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s; }
-.one h2 span:nth-child(22) {
-  -moz-animation-delay: 3.05s;
-  -o-animation-delay: 3.05s;
-  -ms-animation-delay: 3.05s;
-  -webkit-animation-delay: 3.05s;
-  animation-delay: 3.05s; }
-.one h2 span:nth-child(23) {
-  -moz-animation-delay: 3.1s;
-  -o-animation-delay: 3.1s;
-  -ms-animation-delay: 3.1s;
-  -webkit-animation-delay: 3.1s;
-  animation-delay: 3.1s; }
-.one h2 span:nth-child(24) {
-  -moz-animation-delay: 3.15s;
-  -o-animation-delay: 3.15s;
-  -ms-animation-delay: 3.15s;
-  -webkit-animation-delay: 3.15s;
-  animation-delay: 3.15s; }
 
 @-webkit-keyframes fulldropIn {
   from {
@@ -521,113 +288,6 @@ body {
   to {
     right: 0px; } }
 
-.logo img:nth-child(1) {
-  top: -1000px;
-  -moz-animation: fulldropIn ease-in 1;
-  -o-animation: fulldropIn ease-in 1;
-  -webkit-animation: fulldropIn ease-in 1;
-  animation: fulldropIn ease-in 1;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s; }
-.logo img:nth-child(2) {
-  bottom: -1000px;
-  -moz-animation: fulljumpIn ease-in 1;
-  -o-animation: fulljumpIn ease-in 1;
-  -webkit-animation: fulljumpIn ease-in 1;
-  animation: fulljumpIn ease-in 1;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s; }
-.logo img:nth-child(3) {
-  top: -10px;
-  left: 1000px;
-  -moz-animation: sliderightIn ease-in 1;
-  -o-animation: sliderightIn ease-in 1;
-  -webkit-animation: sliderightIn ease-in 1;
-  animation: sliderightIn ease-in 1;
-  -moz-animation-delay: 3.6s;
-  -o-animation-delay: 3.6s;
-  -ms-animation-delay: 3.6s;
-  -webkit-animation-delay: 3.6s;
-  animation-delay: 3.6s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s; }
-.logo img:nth-child(4) {
-  top: -10px;
-  left: 1000px;
-  -moz-animation: sliderightIn ease-in 1;
-  -o-animation: sliderightIn ease-in 1;
-  -webkit-animation: sliderightIn ease-in 1;
-  animation: sliderightIn ease-in 1;
-  -moz-animation-delay: 3.7s;
-  -o-animation-delay: 3.7s;
-  -ms-animation-delay: 3.7s;
-  -webkit-animation-delay: 3.7s;
-  animation-delay: 3.7s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s; }
-
-.one h3 span, h3 a {
-  position: relative;
-  right: -2000px;
-  /* make things invisible upon start */
-  -moz-animation: sliderightIn ease-in 1;
-  -o-animation: sliderightIn ease-in 1;
-  -webkit-animation: sliderightIn ease-in 1;
-  animation: sliderightIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s; }
-
-.one h3 span:nth-child(1) {
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s; }
-.one h3 span:nth-child(2) {
-  -moz-animation-delay: 5.4s;
-  -o-animation-delay: 5.4s;
-  -ms-animation-delay: 5.4s;
-  -webkit-animation-delay: 5.4s;
-  animation-delay: 5.4s; }
-.one h3 span:nth-child(3) {
-  -moz-animation-delay: 5.8s;
-  -o-animation-delay: 5.8s;
-  -ms-animation-delay: 5.8s;
-  -webkit-animation-delay: 5.8s;
-  animation-delay: 5.8s; }
-.one h3 span:nth-child(4) {
-  -moz-animation-delay: 6.2s;
-  -o-animation-delay: 6.2s;
-  -ms-animation-delay: 6.2s;
-  -webkit-animation-delay: 6.2s;
-  animation-delay: 6.2s; }
-.one h3 a {
-  -moz-animation-delay: 7s;
-  -o-animation-delay: 7s;
-  -ms-animation-delay: 7s;
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s; }
-
 @-webkit-keyframes h4 {
   from {
     opacity: 0;
@@ -646,7 +306,345 @@ body {
     opacity: 1;
     top: 100px; } }
 
-.one h4 {
+.one {
+  text-align: center;
+  background-color: #FCFCFC;
+  color: #757597;
+  font-family: patuaoneregular; }
+  .one .wrap {
+    margin: 0 auto;
+    width: 100%; }
+  .one h1, .one h2, .one h3, .one h4, .one p {
+    margin: 0;
+    font-size: 2rem; }
+  .one a {
+    color: inherit;
+    text-decoration: none; }
+  .one p {
+    font-size: 2rem;
+    margin-top: 110px;
+    padding-right: 450px; }
+  .one h1 {
+    font-size: 8rem;
+    font-family: silentreaction;
+    margin: 0;
+    padding-left: 50px; }
+  .one h2, .one img {
+    display: inline-block; }
+  .one img {
+    vertical-align: top; }
+  .one h4 {
+    margin-top: 80px; }
+  .one .logo {
+    position: relative;
+    display: inline;
+    margin-left: 20px; }
+    .one .logo img {
+      position: absolute;
+      z-index: 4; }
+
+.one.active .pone {
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  /* make things offside upon start */
+  -moz-animation: slideIn ease-in 1;
+  -o-animation: slideIn ease-in 1;
+  -webkit-animation: slideIn ease-in 1;
+  animation: slideIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s; }
+.one.active .hider {
+  background-color: #FCFCFC;
+  z-index: 2;
+  position: relative; }
+.one.active .hone {
+  opacity: 0;
+  /* make things invisible upon start */
+  -moz-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  -webkit-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+.one.active h2 span {
+  position: relative;
+  top: -50px;
+  /* make things invisible upon start */
+  -moz-animation: dropIn ease-in 1;
+  -o-animation: dropIn ease-in 1;
+  -webkit-animation: dropIn ease-in 1;
+  animation: dropIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s; }
+.one.active h2 span:nth-child(1) {
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+.one.active h2 span:nth-child(2) {
+  -moz-animation-delay: 2.05s;
+  -o-animation-delay: 2.05s;
+  -ms-animation-delay: 2.05s;
+  -webkit-animation-delay: 2.05s;
+  animation-delay: 2.05s; }
+.one.active h2 span:nth-child(3) {
+  -moz-animation-delay: 2.1s;
+  -o-animation-delay: 2.1s;
+  -ms-animation-delay: 2.1s;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s; }
+.one.active h2 span:nth-child(4) {
+  -moz-animation-delay: 2.15s;
+  -o-animation-delay: 2.15s;
+  -ms-animation-delay: 2.15s;
+  -webkit-animation-delay: 2.15s;
+  animation-delay: 2.15s; }
+.one.active h2 span:nth-child(5) {
+  -moz-animation-delay: 2.2s;
+  -o-animation-delay: 2.2s;
+  -ms-animation-delay: 2.2s;
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s; }
+.one.active h2 span:nth-child(6) {
+  -moz-animation-delay: 2.25s;
+  -o-animation-delay: 2.25s;
+  -ms-animation-delay: 2.25s;
+  -webkit-animation-delay: 2.25s;
+  animation-delay: 2.25s; }
+.one.active h2 span:nth-child(7) {
+  -moz-animation-delay: 2.3s;
+  -o-animation-delay: 2.3s;
+  -ms-animation-delay: 2.3s;
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s; }
+.one.active h2 span:nth-child(8) {
+  -moz-animation-delay: 2.35s;
+  -o-animation-delay: 2.35s;
+  -ms-animation-delay: 2.35s;
+  -webkit-animation-delay: 2.35s;
+  animation-delay: 2.35s; }
+.one.active h2 span:nth-child(9) {
+  -moz-animation-delay: 2.4s;
+  -o-animation-delay: 2.4s;
+  -ms-animation-delay: 2.4s;
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s; }
+.one.active h2 span:nth-child(10) {
+  -moz-animation-delay: 2.45s;
+  -o-animation-delay: 2.45s;
+  -ms-animation-delay: 2.45s;
+  -webkit-animation-delay: 2.45s;
+  animation-delay: 2.45s; }
+.one.active h2 span:nth-child(11) {
+  -moz-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s; }
+.one.active h2 span:nth-child(12) {
+  -moz-animation-delay: 2.55s;
+  -o-animation-delay: 2.55s;
+  -ms-animation-delay: 2.55s;
+  -webkit-animation-delay: 2.55s;
+  animation-delay: 2.55s; }
+.one.active h2 span:nth-child(13) {
+  -moz-animation-delay: 2.6s;
+  -o-animation-delay: 2.6s;
+  -ms-animation-delay: 2.6s;
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s; }
+.one.active h2 span:nth-child(14) {
+  -moz-animation-delay: 2.65s;
+  -o-animation-delay: 2.65s;
+  -ms-animation-delay: 2.65s;
+  -webkit-animation-delay: 2.65s;
+  animation-delay: 2.65s; }
+.one.active h2 span:nth-child(15) {
+  -moz-animation-delay: 2.7s;
+  -o-animation-delay: 2.7s;
+  -ms-animation-delay: 2.7s;
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s; }
+.one.active h2 span:nth-child(16) {
+  -moz-animation-delay: 2.75s;
+  -o-animation-delay: 2.75s;
+  -ms-animation-delay: 2.75s;
+  -webkit-animation-delay: 2.75s;
+  animation-delay: 2.75s; }
+.one.active h2 span:nth-child(17) {
+  -moz-animation-delay: 2.8s;
+  -o-animation-delay: 2.8s;
+  -ms-animation-delay: 2.8s;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s; }
+.one.active h2 span:nth-child(18) {
+  -moz-animation-delay: 2.85s;
+  -o-animation-delay: 2.85s;
+  -ms-animation-delay: 2.85s;
+  -webkit-animation-delay: 2.85s;
+  animation-delay: 2.85s; }
+.one.active h2 span:nth-child(19) {
+  -moz-animation-delay: 2.9s;
+  -o-animation-delay: 2.9s;
+  -ms-animation-delay: 2.9s;
+  -webkit-animation-delay: 2.9s;
+  animation-delay: 2.9s; }
+.one.active h2 span:nth-child(20) {
+  -moz-animation-delay: 2.95s;
+  -o-animation-delay: 2.95s;
+  -ms-animation-delay: 2.95s;
+  -webkit-animation-delay: 2.95s;
+  animation-delay: 2.95s; }
+.one.active h2 span:nth-child(21) {
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+.one.active h2 span:nth-child(22) {
+  -moz-animation-delay: 3.05s;
+  -o-animation-delay: 3.05s;
+  -ms-animation-delay: 3.05s;
+  -webkit-animation-delay: 3.05s;
+  animation-delay: 3.05s; }
+.one.active h2 span:nth-child(23) {
+  -moz-animation-delay: 3.1s;
+  -o-animation-delay: 3.1s;
+  -ms-animation-delay: 3.1s;
+  -webkit-animation-delay: 3.1s;
+  animation-delay: 3.1s; }
+.one.active h2 span:nth-child(24) {
+  -moz-animation-delay: 3.15s;
+  -o-animation-delay: 3.15s;
+  -ms-animation-delay: 3.15s;
+  -webkit-animation-delay: 3.15s;
+  animation-delay: 3.15s; }
+.one.active h2 span:nth-child(25) {
+  -moz-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s; }
+.one.active .logo img:nth-child(1) {
+  top: -1000px;
+  -moz-animation: fulldropIn ease-in 1;
+  -o-animation: fulldropIn ease-in 1;
+  -webkit-animation: fulldropIn ease-in 1;
+  animation: fulldropIn ease-in 1;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+.one.active .logo img:nth-child(2) {
+  bottom: -1000px;
+  -moz-animation: fulljumpIn ease-in 1;
+  -o-animation: fulljumpIn ease-in 1;
+  -webkit-animation: fulljumpIn ease-in 1;
+  animation: fulljumpIn ease-in 1;
+  -moz-animation-delay: 4.1s;
+  -o-animation-delay: 4.1s;
+  -ms-animation-delay: 4.1s;
+  -webkit-animation-delay: 4.1s;
+  animation-delay: 4.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+.one.active .logo img:nth-child(3) {
+  top: -10px;
+  left: 1000px;
+  -moz-animation: sliderightIn ease-in 1;
+  -o-animation: sliderightIn ease-in 1;
+  -webkit-animation: sliderightIn ease-in 1;
+  animation: sliderightIn ease-in 1;
+  -moz-animation-delay: 4.6s;
+  -o-animation-delay: 4.6s;
+  -ms-animation-delay: 4.6s;
+  -webkit-animation-delay: 4.6s;
+  animation-delay: 4.6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+.one.active .logo img:nth-child(4) {
+  top: -10px;
+  left: 1000px;
+  -moz-animation: sliderightIn ease-in 1;
+  -o-animation: sliderightIn ease-in 1;
+  -webkit-animation: sliderightIn ease-in 1;
+  animation: sliderightIn ease-in 1;
+  -moz-animation-delay: 4.7s;
+  -o-animation-delay: 4.7s;
+  -ms-animation-delay: 4.7s;
+  -webkit-animation-delay: 4.7s;
+  animation-delay: 4.7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+.one.active h3 span, .one.active h3 a {
+  position: relative;
+  right: -2000px;
+  /* make things invisible upon start */
+  -moz-animation: sliderightIn ease-in 1;
+  -o-animation: sliderightIn ease-in 1;
+  -webkit-animation: sliderightIn ease-in 1;
+  animation: sliderightIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+.one.active h3 span:nth-child(1) {
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s; }
+.one.active h3 span:nth-child(2) {
+  -moz-animation-delay: 6.4s;
+  -o-animation-delay: 6.4s;
+  -ms-animation-delay: 6.4s;
+  -webkit-animation-delay: 6.4s;
+  animation-delay: 6.4s; }
+.one.active h3 span:nth-child(3) {
+  -moz-animation-delay: 6.8s;
+  -o-animation-delay: 6.8s;
+  -ms-animation-delay: 6.8s;
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s; }
+.one.active h3 span:nth-child(4) {
+  -moz-animation-delay: 7.2s;
+  -o-animation-delay: 7.2s;
+  -ms-animation-delay: 7.2s;
+  -webkit-animation-delay: 7.2s;
+  animation-delay: 7.2s; }
+.one.active h3 a {
+  -moz-animation-delay: 7.6s;
+  -o-animation-delay: 7.6s;
+  -ms-animation-delay: 7.6s;
+  -webkit-animation-delay: 7.6s;
+  animation-delay: 7.6s; }
+.one.active h4 {
   top: 300px;
   opacity: 0;
   -moz-animation: h4 ease-in 1;
@@ -654,11 +652,11 @@ body {
   -webkit-animation: h4 ease-in 1;
   animation: h4 ease-in 1;
   position: relative;
-  -moz-animation-delay: 8s;
-  -o-animation-delay: 8s;
-  -ms-animation-delay: 8s;
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
+  -moz-animation-delay: 9s;
+  -o-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;

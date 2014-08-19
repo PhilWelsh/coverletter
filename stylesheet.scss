@@ -172,6 +172,31 @@ a{height:100%;width:100%;position:absolute;top:0;}
     
 
 //////////////////////////////////////////ONE//////////////////////////////////////////
+@-webkit-keyframes slideIn { from { @include transform(translateX(-100%)); } to { @include transform(translateX(0)); } }
+@-moz-keyframes slideIn { from { @include transform(translateX(-100%)); } to { @include transform(translateX(0)); } }
+@keyframes slideIn { from { @include transform(translateX(-100%)); } to { @include transform(translateX(0)); } }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes dropIn { from { top:-50px; } to { top:0; } }
+@keyframes dropIn { from { top:-50px; } to { top:0; } }
+
+
+@-webkit-keyframes fulldropIn { from { top:-1000px; } to { top:-10px; } }
+@-webkit-keyframes fulljumpIn { from { bottom:-1000px; } to { bottom:-20px; } }
+@-webkit-keyframes sliderightIn { from { left:1000px; } to { left:0px; } }
+@-webkit-keyframes slideleftIn { from { right:1000px; } to { right:0px; } }
+
+@keyframes fulldropIn { from { top:-1000px; } to { top:-10px; } }
+@keyframes fulljumpIn { from { bottom:-1000px; } to { bottom:-20px; } }
+@keyframes sliderightIn { from { left:1000px; } to { left:0px; } }
+@keyframes slideleftIn { from { right:1000px; } to { right:0px; } }
+
+@-webkit-keyframes h4 { from { opacity:0;top:200px } to { opacity:1; top:0;} }
+@keyframes h4 { from { opacity:0;top:300px } to { opacity:1; top:100px;} }
+
+
      .one{text-align:center;background-color: #FCFCFC; color:#757597;
           font-family:patuaoneregular;
           .wrap{margin:0 auto;width:100%;}
@@ -187,11 +212,9 @@ text-decoration: none;}
           img{position:absolute;z-index:4;}
     }     
 }
-@-webkit-keyframes slideIn { from { @include transform(translateX(-100%)); } to { @include transform(translateX(0)); } }
-@-moz-keyframes slideIn { from { @include transform(translateX(-100%)); } to { @include transform(translateX(0)); } }
-@keyframes slideIn { from { @include transform(translateX(-100%)); } to { @include transform(translateX(0)); } }
-.pone {
+.one.active {
 
+.pone {
     @include transform(translateX(-100%)); /* make things offside upon start */
     @include animation(slideIn ease-in 1);
 
@@ -200,8 +223,6 @@ text-decoration: none;}
 }
 
 .hider{background-color:#FCFCFC;z-index:2;position:relative;}
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 .hone {
     opacity: 0; /* make things invisible upon start */
     @include animation(fadeIn ease-in 1);
@@ -211,16 +232,15 @@ text-decoration: none;}
     @include animation-duration( 1s);
 }
 
-@-webkit-keyframes dropIn { from { top:-50px; } to { top:0; } }
-@keyframes dropIn { from { top:-50px; } to { top:0; } }
-.one h2 span{
+h2 span{
     position:relative;
     top:-50px; /* make things invisible upon start */
     @include animation(dropIn ease-in 1);
     @include animation-fill-mode( forwards);
     @include animation-duration( .1s);
     }
-.one h2{
+
+h2{
 span:nth-child(1){@include animation-delay(2s);}
 span:nth-child(2){@include animation-delay(2.05s);}
 span:nth-child(3){@include animation-delay(2.1s);}
@@ -245,52 +265,42 @@ span:nth-child(21){@include animation-delay(3s);}
 span:nth-child(22){@include animation-delay(3.05s);}
 span:nth-child(23){@include animation-delay(3.1s);}
 span:nth-child(24){@include animation-delay(3.15s);}
+span:nth-child(25){@include animation-delay(3.5s);}
 }
 
-
-@-webkit-keyframes fulldropIn { from { top:-1000px; } to { top:-10px; } }
-@-webkit-keyframes fulljumpIn { from { bottom:-1000px; } to { bottom:-20px; } }
-@-webkit-keyframes sliderightIn { from { left:1000px; } to { left:0px; } }
-@-webkit-keyframes slideleftIn { from { right:1000px; } to { right:0px; } }
-
-@keyframes fulldropIn { from { top:-1000px; } to { top:-10px; } }
-@keyframes fulljumpIn { from { bottom:-1000px; } to { bottom:-20px; } }
-@keyframes sliderightIn { from { left:1000px; } to { left:0px; } }
-@keyframes slideleftIn { from { right:1000px; } to { right:0px; } }
 
 .logo{
 img:nth-child(1){top:-1000px;@include animation(fulldropIn ease-in 1);
-                 @include animation-delay(3s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
+                 @include animation-delay(4s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
 img:nth-child(2){bottom:-1000px;@include animation(fulljumpIn ease-in 1);
-                 @include animation-delay(3s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
+                 @include animation-delay(4.1s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
 img:nth-child(3){ top:-10px;left:1000px;@include animation(sliderightIn ease-in 1);
-                 @include animation-delay(3.6s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
+                 @include animation-delay(4.6s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
 img:nth-child(4){top:-10px;left:1000px;@include animation(sliderightIn ease-in 1);
-                 @include animation-delay(3.7s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
+                 @include animation-delay(4.7s);@include animation-fill-mode( forwards);@include animation-duration( .8s);}
 }
 
-.one h3 span,h3 a{
+h3 span,h3 a{
     position:relative;
     right:-2000px; /* make things invisible upon start */
     @include animation(sliderightIn ease-in 1);
     @include animation-fill-mode( forwards);
     @include animation-duration( .8s);
     }
-.one h3{
-    span:nth-child(1){@include animation-delay(5s);}
-    span:nth-child(2){@include animation-delay(5.4s);}
-    span:nth-child(3){@include animation-delay(5.8s);}
-    span:nth-child(4){@include animation-delay(6.2s);}
-    a{@include animation-delay(7s);}
+h3{
+    span:nth-child(1){@include animation-delay(6s);}
+    span:nth-child(2){@include animation-delay(6.4s);}
+    span:nth-child(3){@include animation-delay(6.8s);}
+    span:nth-child(4){@include animation-delay(7.2s);}
+    a{@include animation-delay(7.6s);}
 }
-@-webkit-keyframes h4 { from { opacity:0;top:200px } to { opacity:1; top:0;} }
-@keyframes h4 { from { opacity:0;top:300px } to { opacity:1; top:100px;} }
-.one h4 {
+
+h4 {
     top: 300px;
     opacity: 0;
     @include animation(h4 ease-in 1);
     position: relative;
-    @include animation-delay( 8s);
+    @include animation-delay( 9s);
     @include animation-fill-mode( forwards);
     @include animation-duration(  2s);
 
@@ -299,7 +309,7 @@ img:nth-child(4){top:-10px;left:1000px;@include animation(sliderightIn ease-in 1
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
+}
      //////////////////////////////////////////TWO//////////////////////////////////////////
      .two{background-color: #68635B;; font-family:quandoregular;
          .header{position:relative; text-align:center;
